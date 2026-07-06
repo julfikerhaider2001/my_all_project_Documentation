@@ -1,0 +1,92 @@
+# ----------------------------------------------------------------
+# IDE / editor metadata
+# ----------------------------------------------------------------
+.puku/
+.agents/
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+tmp/
+temp/
+
+# ----------------------------------------------------------------
+# Local secrets and provisioning
+# ----------------------------------------------------------------
+.env
+.env.*
+!.env.example
+**/provisioning.h
+**/provisioning.example.h
+
+# ----------------------------------------------------------------
+# ESP-IDF / ESP32 firmware
+# ----------------------------------------------------------------
+**/build/
+**/sdkconfig.old
+**/managed_components/
+**/dependencies.lock
+**/partitions.csv.bak
+**/idf_component.lock
+
+# Arduino
+**/Arduino Code/_tmp/
+
+# ----------------------------------------------------------------
+# Android / Gradle / Java / Kotlin
+# ----------------------------------------------------------------
+**/.gradle/
+**/local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# ----------------------------------------------------------------
+# JavaScript / Node
+# ----------------------------------------------------------------
+node_modules/
+package-lock.json
+yarn.lock
+
+# ----------------------------------------------------------------
+# Python
+# ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# ----------------------------------------------------------------
+# Qt
+# ----------------------------------------------------------------
+**/build-*/
+
+# ----------------------------------------------------------------
+# Native CAD sources (Fusion 360 / SolidWorks are source of truth;
+# STL/STEP files belong in tagged Releases, not the repo).
+# ----------------------------------------------------------------
+*.step
+*.stp
+*.stl
+*.f3d
+*.FCStd
+**/*.iges
+**/*.ipt
+**/*.iam
+
+# 3D file directories (raw CAD exports; only keep images/docs inside)
+/3d file/
+**/3d file/

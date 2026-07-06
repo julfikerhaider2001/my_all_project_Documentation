@@ -1,0 +1,41 @@
+# Local secrets and provisioning
+.env
+.env.*
+!.env.example
+firmware/**/provisioning.h
+
+# Android and Gradle
+software/android/.gradle/
+software/android/**/build/
+software/android/local.properties
+*.apk
+*.aab
+
+# JavaScript dependencies
+node_modules/
+
+# ESP-IDF build outputs
+firmware/**/build/
+firmware/**/sdkconfig.old
+firmware/**/dependencies.lock
+firmware/**/managed_components/
+
+# CAD/3D native source (Fusion 360 is source of truth; STL/STEP attached to Releases)
+*.step
+*.stp
+*.f3d
+*.FCStd
+3d file/
+
+# IDE and operating system files
+.agents/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

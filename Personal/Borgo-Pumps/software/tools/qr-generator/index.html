@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Borgo Pumps QR Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <p class="product-name">Borgo Pumps</p>
+        <h1>Device QR Generator</h1>
+        <p class="lede">
+          Create the installer QR that binds one programmed controller to the Android app. The SIM number is entered later on the phone.
+        </p>
+
+        <form id="device-form" class="form">
+          <label>
+            Pump name
+            <input id="name" value="Main Pump" autocomplete="off" />
+          </label>
+          <label>
+            Device ID
+            <input id="deviceId" value="BF000123" maxlength="16" autocomplete="off" required />
+          </label>
+          <label>
+            Hardware model
+            <input id="model" value="nano-pump-v1" maxlength="24" autocomplete="off" required />
+          </label>
+          <label>
+            One-time claim code
+            <span class="field-row">
+              <input id="claimCode" maxlength="32" pattern="[A-Fa-f0-9]{32}" autocomplete="off" required />
+              <button id="regenerate" class="secondary" type="button">New code</button>
+            </span>
+          </label>
+          <button type="submit">Generate QR</button>
+        </form>
+      </section>
+
+      <section class="panel qr-panel">
+        <div id="qrcode" class="qr-box"></div>
+        <textarea id="payload" readonly></textarea>
+        <div class="actions">
+          <button id="copy" type="button">Copy Payload</button>
+          <button id="download" type="button">Download PNG</button>
+        </div>
+        <p class="note">
+          Print this QR for the matching firmware only. It contains a bootstrap claim credential, not the permanent command key. Pairing also requires the physical device button.
+        </p>
+      </section>
+    </main>
+
+    <script src="./vendor/qrcode.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

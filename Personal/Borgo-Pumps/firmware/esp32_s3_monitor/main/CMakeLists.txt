@@ -1,0 +1,20 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "sensor.c"
+        "led_blinker.c"
+        "pump.c"
+        "config_store.c"
+        "rmaker_wrapper.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        esp_timer
+        nvs_flash
+        esp_wifi
+        esp_event
+        esp_netif
+        esp_rainmaker
+        rmaker_common
+        wifi_provisioning
+)

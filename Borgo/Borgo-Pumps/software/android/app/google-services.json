@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "418152323708",
+    "project_id": "agri-iot-1522e",
+    "storage_bucket": "agri-iot-1522e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418152323708:android:3b07156b8b7a78842307f9",
+        "android_client_info": {
+          "package_name": "xyz.borgo.farm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDlE55EOjEvPrxJsdMa32EX4gQra8aoJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+dependencies:
+  espressif/esp_rainmaker: "*"
+  espressif/rmaker_common: "*"
+
+# Allow multiple definitions for protobuf symbols
+build_flags:
+  - -Wl,--allow-multiple-definition
